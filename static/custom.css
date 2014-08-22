@@ -1,0 +1,21 @@
+body{
+  text-align: center;
+}
+
+.landing {
+  padding: 50px 0;
+  color: #000;
+}
+
+.landing h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  background: url("../static/images/divider.png") no-repeat bottom center;
+  padding-bottom: 12px;
+}
+
+.landing p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+}

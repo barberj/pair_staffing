@@ -1,0 +1,75 @@
+{% extends "master.html" %}
+{% block title %}Educational{% endblock %}
+{% block content %}
+
+<div id="edu">
+  <div id="cloud" class="visible-desktop"></div>
+  <p>
+    Sometimes advocating for you child’s educational rights can be an overwhelming task.
+    I am here to help you navigate the special education and 504 maze. Below
+    is a description of the support that you will receive, if you decide to hire me.
+  </p>
+
+  <p>
+    <b>Understand Your Child’s Records:</b>
+    I can assist you with understanding what is in your child’s records and
+    be a resource for what information may be missing or you need assistance with.
+  </p>
+
+  <p>
+    <b>Understand Your Child’s Educational Plan:</b>
+    Children with disabilities often require an Individualized Education
+    Plan (IEP). The parent should play a major role in the development of the IEP
+    including the child’s documented strengths, weaknesses, goals, objections,
+    related services and placement decisions.
+  </p>
+
+  <p>
+    <b>Offer You Advice and Things to Consider:</b>
+    My advice is based on my experiences as a employee of the school system,
+    my experiences with my own child and the training and research I have
+    done in the areas of Special Education Law and Advocacy.
+  </p>
+
+  <p>
+    <b>Improve Your Child’s Plan:</b>
+    We can discuss what your child needs and I will work with you to have
+    the school district implement a plan to provide your child access to a free
+    and appropriate education that is provided in the least restrictive environment
+    with appropriate accommodations and modifications. I am here to assist you
+    with planning and staying focused on the key factors.
+  </p>
+
+  <p>
+    <b>Attend Meetings / Review Communications:</b>
+    To create an effective and appropriate IEP, the team needs to look closely
+    at a child’s needs and share their knowledge, experience and ideas to develop
+    a program for the child.
+  </p>
+
+  <p>
+    <b>Assist With Conflicts:</b>
+    My desire is to deescalate conflicts and use strategies and skills to help
+    everyone to work collaboratively. In my experience, there are fewer conflicts
+    when an advocate is involved in the process. There is often more two-way
+    participation in the meetings when an advocate is involved.  I can help
+    you to participate in creating your child’s educational plan and to be seen
+    as a vital part of the team. My goal is to create a safe environment for
+    everyone to work together.
+  </p>
+
+  <p>
+    <b>Support, Educate, Equip and Empower You:</b>
+    My goal is to assist parents on their path of advocating for their child's
+    educational rights. I desire to help you become more involved and confident
+    in your child’s education.  I want to help you become more confident
+    and successful in advocating for the needs of your child.
+  </p>
+</div>
+{% endblock %}
+
+{% block javascript %}
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="{{url_for('static', filename='lib/d3-cloud/d3.layout.cloud.js')}}"></script>
+  <script src="{{url_for('static', filename='cloud.js')}}"></script>
+{% endblock %}

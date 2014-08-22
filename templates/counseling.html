@@ -1,0 +1,153 @@
+{% extends "master.html" %}
+{% block title %}Counseling{% endblock %}
+{% block content %}
+<div>
+  <p>
+    <span class="tehword">Life</span> is full of interpersonal and emotional challenges.
+    Sometimes these periods of uncertainty and challenge can be frightening. However,
+    I believe they provide an opportunity to grow, attain inner peace and
+    create a new beginning. My goal is to provide a safe and confidential
+    space in which you can explore your personal concerns in order to develop
+    and attain personal goals, achieve authentic relationships and gain self awareness.
+  </p>
+  <div id="counselingCarousel" class="carousel">
+    <div class="carousel-inner">
+
+      <div id="children" class="counseling item active">
+        <div class="row-fluid">
+          <div class="span3">
+            <img src="{{url_for('static', filename='img/child_bust.png')}}" class="img-circle">
+          </div>
+          <div class="span9">
+            <h2>Children</h2>
+            <p>
+              I enjoy working with parents to create a healthy environment in which their
+              children can thrive. I typically meet with the parents first to hear all about
+              their child’s strengths and struggles. Then, as I meet with your child I measure
+              their self-concept, anxiety, depression, anger, resiliency, and reactivity as I
+              hear from them what is working in their life and what is not.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="adolescents" class="item">
+        <h2>Adolescents</h2>
+        <div style="float:right;margin-left:2em;" class="well visible-desktop">
+          Counseling services to help children and their families with:
+          <ul>
+            <li>Behavioral problems</li>
+            <li>Academic struggles</li>
+            <li>Social skill deficits</li>
+            <li>Friendship issues</li>
+            <li>Family conflict</li>
+            <li>Worries / Anxiety / Stress</li>
+            <li>Low self-esteem</li>
+            <li>Separation and Divorce Issues</li>
+          </ul>
+        </div>
+        I enjoy the challenge of adolescent counseling &amp; helping teens navigate
+        the tricky waters of middle school and high school. Being an adolescent
+        is not easy; managing schoolwork, peer pressure, sports, relationships,
+        electronics, driving, and college applications can be overwhelming. Conflict
+        around these issues can put teens and their parents at risk for depression and anxiety.
+        <br /><br />
+        I work to help teens appreciate their parents and help parents celebrate the launching
+        of their teens. I teach adolescents social and life skills that will serve them
+        throughout their life in schools, families, and in the job market.
+        <div class="well hidden-desktop" style="margin:2em;">
+          Counseling services to help children and their families with:
+          <ul>
+            <li>Behavioral problems</li>
+            <li>Academic struggles</li>
+            <li>Social skill deficits</li>
+            <li>Friendship issues</li>
+            <li>Family conflict</li>
+            <li>Worries / Anxiety / Stress</li>
+            <li>Low self-esteem</li>
+            <li>Separation and Divorce Issues</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="adults" class="item">
+        <h2>Adults</h2>
+        <div class="well visible-desktop" style="float:left;margin-right:2em;width:50%;">
+          Common concerns brought by individual clients include symptoms of:
+          <ul>
+            <li>Relationship Struggles</li>
+            <li>Work Stress including Underemployment / Unemployment</li>
+            <li>Anxiety</li>
+            <li>Grief</li>
+            <li>Low Self-Esteem</li>
+          </ul>
+          Issues such as these are handled in a compassionate, non-blaming approach.
+          Therapy is focused on solutions and attempts to bring about short-term
+          relief as well as long-term change.
+        </div>
+        The adults that I work with are successful, smart, and determined to work
+        on the one or two areas that are not working in their lives. I partner with
+        them in building more satisfying personal lives, relationships, and careers.
+        I see people who have tried everything and have made the courageous decision
+        to admit they need some help.
+        <br /><br />
+        Nothing is more frustrating than trying really hard and still feeling
+        like the particular problem is not getting better. I help my clients learn
+        new approaches, so they don't simply try hard, but actually see progress.
+        Most clients report they wish they had started the process sooner!
+        <div class="well hidden-desktop" style="margin:2em">
+          Common concerns brought by individual clients include symptoms of:
+          <ul>
+            <li>Relationship Struggles</li>
+            <li>Work Stress including Underemployment / Unemployment</li>
+            <li>Anxiety</li>
+            <li>Grief</li>
+            <li>Low Self-Esteem</li>
+          </ul>
+          Issues such as these are handled in a compassionate, non-blaming approach.
+          Therapy is focused on solutions and attempts to bring about short-term
+          relief as well as long-term change.
+        </div>
+      </div>
+
+    </div>
+    <a class="carousel-control left" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" data-slide="next">&rsaquo;</a>
+  </div>
+</div>
+{% endblock %}
+{% block javascript %}
+<script>
+$(document).ready(function () {
+
+  $('#counselingCarousel').carousel({
+    interval: 0
+  });
+
+  $('#counselingCarousel h2').each(function(i, el){
+    el.innerHTML = '<a class="carousel-control left hidden-desktop" data-slide="prev">&lsaquo;</a>' +
+        el.innerHTML +
+        '<a class="carousel-control right hidden-desktop" data-slide="next">&rsaquo;</a>';
+  });
+
+  $('.carousel-control.left').bind('click', function(){
+    $('#counselingCarousel').carousel('prev');
+  });
+  $('.carousel-control.right').bind('click', function(){
+    $('#counselingCarousel').carousel('next');
+  });
+
+  $('.carousel-control').fadeOut(1000);
+
+  $('#counselingCarousel').mouseenter(function (){
+    if($(document).width() > 979){
+      $('.carousel-control').fadeIn(100);
+    }
+  });
+  $('#counselingCarousel').mouseleave(function (){
+    $('.carousel-control').fadeOut(100);
+  });
+});
+</script>
+{% endblock %}
+
