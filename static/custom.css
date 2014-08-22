@@ -4,10 +4,10 @@ body{
 
 .landing {
   padding: 50px 0;
-  color: #FFF;
+  color: #000;
 }
 
-.landing h1 {
+.container h1 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
   background: url("../static/images/divider.png") no-repeat bottom center;
@@ -21,9 +21,18 @@ body{
 }
 
 .banner {
-  background: rgba(250,250,250,0.2);
+  background: rgba(200,200,200,0.3);
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px; /* future proofing */
   -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.industries {
+  background: #F5F5F5;
+  padding: 90px 0;
+}
+
+.industries ul {
+  text-align: left;
 }
