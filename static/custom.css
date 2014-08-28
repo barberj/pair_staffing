@@ -6,6 +6,7 @@ body {
 
 section {
   padding: 90px 0;
+  margin-bottom: 5em;
 }
 
 .landing {
@@ -32,14 +33,6 @@ section {
   font-size: 19px;
 }
 
-.banner {
-  background: rgba(200,200,200,0.3);
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px; /* future proofing */
-  -khtml-border-radius: 10px; /* for old Konqueror browsers */
-}
-
 .industries {
   background: #F5F5F5;
 }
@@ -47,7 +40,6 @@ section {
 .white {
   background: #F5F5F5;
 }
-
 
 .industries ul {
   text-align: left;
