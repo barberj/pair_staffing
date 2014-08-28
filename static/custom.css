@@ -1,10 +1,21 @@
-body{
+body {
   text-align: center;
+  background: #292929 url("../static/images/bg.jpg") 50% 0 repeat fixed;
+  -webkit-background-size: cover;
+}
+
+section {
+  padding: 90px 0;
 }
 
 .landing {
   padding: 50px 0;
-  color: #000;
+  color: #FFF;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
 }
 
 .container h1 {
@@ -12,6 +23,7 @@ body{
   font-weight: 700;
   background: url("../static/images/divider.png") no-repeat bottom center;
   padding-bottom: 12px;
+  font-size: 70px;
 }
 
 .landing p {
@@ -30,8 +42,12 @@ body{
 
 .industries {
   background: #F5F5F5;
-  padding: 90px 0;
 }
+
+.white {
+  background: #F5F5F5;
+}
+
 
 .industries ul {
   text-align: left;
