@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+  width: 100%
+}
 body {
   text-align: center;
   background: #292929 url("../static/images/bg.jpg") 50% 0 repeat fixed;
@@ -16,6 +20,8 @@ section {
 .landing {
   padding: 50px 0;
   color: #FFF;
+  width:100%;
+  height:100%;
 }
 
 .container h1 {
