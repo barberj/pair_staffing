@@ -54,6 +54,15 @@ section {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
+  display: flex;
   vertical-align: middle;
+}
+
+nav {
+  font-size: 1.5em;
+}
+
+#affixed-menu {
+  width: 100%;
+  z-index: 999999;
 }
