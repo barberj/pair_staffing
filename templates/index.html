@@ -11,7 +11,7 @@
   <title>Pair Staffing</title>
 </head>
 <body>
-  <div data-spy="affix" data-offset-top="60" data-offset-bottom="200" id="affixed-menu">
+  <div id="affixed-menu">
     <nav class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -141,39 +141,106 @@ We are dedicated to providing the highest quality candidates with every company 
       </div>
     </div>
   </section>
-  <section class="candidate white" id="candidates">
+  <section class="contact white">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Candidates</h1>
-          <p>
-Looking for the perfect position? Submit your resume and we'll respond as soon as possible.
-          </p>
+          <h1><i class="fa fa-wechat"></i> Contact Us</h1>
+          <ul class="nav nav-tabs contact" role="tablist">
+            <li class="active"><a href="#candidates" role="tab" data-toggle="tab">Candidates</a></li>
+            <li><a href="#employers" role="tab" data-toggle="tab">Employers</a></li>
+            <li><a href="#other" role="tab" data-toggle="tab">Comments/Questions</a></li>
+          </ul>
           <div class="row text-left">
-            <div class="col-md-6">
-              <form role="form">
-                <div class="form-group">
-                  <label class="sr-only" for="name">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter full name">
-                </div>
-                <div class="form-group">
-                  <label class="sr-only" for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                  <label class="sr-only" for="phone">Phone</label>
-                  <input type="email" class="form-control" id="phone" placeholder="Enter phone #">
-                </div>
-                <div class="form-group">
-                  <label class="sr-only" for="resume">Resume</label>
-                  <textarea class="form-control" rows="3" id="resume" placeholder="Paste resume"></textarea>
-                </div>
-                <div class="form-group">
-                  <button type="button" class="btn btn-default btn-lg phone">
-                    <span class="glyphicon glyphicon-thumbs-up"></span> Submit
-                  </button>
-                </div>
-              </form>
+            <div class="tab-content col-md-6 contact">
+              <div class="tab-pane" id="candidates">
+                <p>
+      Looking for the perfect position? Submit your resume and we'll respond as soon as possible.
+                </p>
+                <form role="form">
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter full name">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="phone">Phone</label>
+                    <input type="email" class="form-control" id="phone" placeholder="Enter phone #">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="resume">Resume</label>
+                    <textarea class="form-control" rows="3" id="resume" placeholder="Paste resume"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-default btn-lg phone">
+                      <span class="glyphicon glyphicon-thumbs-up"></span> Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="employers">
+                <p>
+      Looking for the perfect candidate? Submit your position and we'll respond as soon as possible.
+                </p>
+                <form role="form">
+                  <div class="form-group">
+                    <label class="sr-only" for="company">Company</label>
+                    <input type="company" class="form-control" id="company" placeholder="Enter company name">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Contact Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter contact name">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="phone">Phone</label>
+                    <input type="email" class="form-control" id="phone" placeholder="Enter phone #">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="details">Position Details</label>
+                    <textarea class="form-control" rows="3" id="details" placeholder="Position Details"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-default btn-lg phone">
+                      <span class="glyphicon glyphicon-thumbs-up"></span> Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane active" id="other">
+                <p>
+      Looking for the perfect position? Submit your resume and we'll respond as soon as possible.
+                </p>
+                <form role="form">
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter full name">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="phone">Phone</label>
+                    <input type="email" class="form-control" id="phone" placeholder="Enter phone #">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="comment">Comments or questions</label>
+                    <textarea class="form-control" rows="3" id="comment" placeholder="Enter any comments or questions?"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-default btn-lg phone">
+                      <span class="glyphicon glyphicon-thumbs-up"></span> Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
             <div class="irl col-md-6">
               <div class="row row-eq-height">

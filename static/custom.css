@@ -38,7 +38,7 @@ section {
   font-size: 19px;
 }
 
-.industries {
+.nav-tabs li.active a {
   background: #F5F5F5;
 }
 
@@ -63,6 +63,20 @@ nav {
 }
 
 #affixed-menu {
+  position: fixed;
   width: 100%;
   z-index: 999999;
 }
+
+.nav-tabs.contact {
+  margin-bottom: 1em;
+}
+
+.tab-content.contact {
+  padding-left: 1.5em;
+}
+
+.form-group .btn {
+  width: 100%
+}
+
