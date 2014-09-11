@@ -1,6 +1,8 @@
 html, body {
   height: 100%;
-  width: 100%
+  width: 100%;
+  font-family: 'Cardo', serif;
+  font-weight: 400;
 }
 body {
   text-align: center;
@@ -25,7 +27,6 @@ section {
 }
 
 .container h1 {
-  font-family: 'Libre Baskerville', serif;
   font-weight: 700;
   background: url("../static/images/divider.png") no-repeat bottom center;
   padding-bottom: 12px;
@@ -33,8 +34,6 @@ section {
 }
 
 .landing p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
   font-size: 19px;
 }
 
