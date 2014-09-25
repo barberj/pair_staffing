@@ -157,25 +157,25 @@ We are dedicated to providing the highest quality candidates with every company 
                 <p>
       Looking for the perfect position? Submit your resume and we'll respond as soon as possible.
                 </p>
-                <form role="form">
+                <form role="form" action="{{ url_for('candidate') }}">
                   <div class="form-group">
                     <label class="sr-only" for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter full name">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter full name">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="phone">Phone</label>
-                    <input type="email" class="form-control" id="phone" placeholder="Enter phone #">
+                    <input type="email" class="form-control" id="phone" name="phone" placeholder="Enter phone #">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="resume">Resume</label>
-                    <textarea class="form-control" rows="3" id="resume" placeholder="Paste resume"></textarea>
+                    <textarea class="form-control" rows="3" id="resume" name="resume" placeholder="Paste resume"></textarea>
                   </div>
                   <div class="form-group">
-                    <button type="button" class="btn btn-default btn-lg phone">
+                    <button type="button" class="btn btn-default btn-lg candidate">
                       <span class="glyphicon glyphicon-thumbs-up"></span> Submit
                     </button>
                   </div>
@@ -185,29 +185,29 @@ We are dedicated to providing the highest quality candidates with every company 
                 <p>
       Looking for the perfect candidate? Submit your position and we'll respond as soon as possible.
                 </p>
-                <form role="form">
+                <form role="form" action="{{ url_for('employer') }}" >
                   <div class="form-group">
                     <label class="sr-only" for="company">Company</label>
-                    <input type="company" class="form-control" id="company" placeholder="Enter company name">
+                    <input type="company" class="form-control" id="company" name="company" placeholder="Enter company name">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="name">Contact Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter contact name">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter contact name">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="phone">Phone</label>
-                    <input type="email" class="form-control" id="phone" placeholder="Enter phone #">
+                    <input type="email" class="form-control" id="phone" name="phone" placeholder="Enter phone #">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="details">Position Details</label>
                     <textarea class="form-control" rows="3" id="details" placeholder="Enter position details"></textarea>
                   </div>
                   <div class="form-group">
-                    <button type="button" class="btn btn-default btn-lg phone">
+                    <button type="button" class="btn btn-default btn-lg employer">
                       <span class="glyphicon glyphicon-thumbs-up"></span> Submit
                     </button>
                   </div>
@@ -217,25 +217,25 @@ We are dedicated to providing the highest quality candidates with every company 
                 <p>
       Looking for the perfect position? Submit your resume and we'll respond as soon as possible.
                 </p>
-                <form role="form">
+                <form role="form" action="{{ url_for('other') }}" >
                   <div class="form-group">
                     <label class="sr-only" for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter full name">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter full name">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="phone">Phone</label>
-                    <input type="email" class="form-control" id="phone" placeholder="Enter phone #">
+                    <input type="email" class="form-control" id="phone" name="phone" placeholder="Enter phone #">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="comment">Comments or questions</label>
-                    <textarea class="form-control" rows="3" id="comment" placeholder="Enter any comments or questions?"></textarea>
+                    <textarea class="form-control" rows="3" id="comment" name="comment" placeholder="Enter any comments or questions?"></textarea>
                   </div>
                   <div class="form-group">
-                    <button type="button" class="btn btn-default btn-lg phone">
+                    <button type="button" class="btn btn-default btn-lg contact">
                       <span class="glyphicon glyphicon-thumbs-up"></span> Submit
                     </button>
                   </div>
