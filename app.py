@@ -50,8 +50,8 @@ def employer():
     send_email('Job Details', request.form, request.files['file'])
     return redirect(url_for('index'))
 
-@app.route("/other", methods=['POST'])
-def other():
+@app.route("/comment", methods=['POST'])
+def comment():
     send_email('Comment/Question', request.form)
     return redirect(url_for('index'))
 
