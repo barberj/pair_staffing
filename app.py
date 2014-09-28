@@ -45,12 +45,12 @@ def candidate():
     send_email('Candidate Resume', request.form, request.files['file'])
     return redirect(url_for('index'))
 
-@app.route("/employer")
+@app.route("/employer", methods=['POST'])
 def employer():
     send_email('Job Details', request.form, request.files['file'])
     return redirect(url_for('index'))
 
-@app.route("/other")
+@app.route("/other", methods=['POST'])
 def other():
     send_email('Comment/Question', request.form)
     return redirect(url_for('index'))
