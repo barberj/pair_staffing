@@ -157,7 +157,7 @@ We are dedicated to providing the highest quality candidates with every company 
                 <p>
       Looking for the perfect position? Submit your resume and we'll respond as soon as possible.
                 </p>
-                <form role="form" action="{{ url_for('candidate') }}">
+                <form role="form" id="candidate_form" method="post" enctype="multipart/form-data" action="{{ url_for('candidate') }}">
                   <div class="form-group">
                     <label class="sr-only" for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter full name">
@@ -172,7 +172,7 @@ We are dedicated to providing the highest quality candidates with every company 
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="resume">Resume</label>
-                    <textarea class="form-control" rows="3" id="resume" name="resume" placeholder="Paste resume"></textarea>
+                    <input type=file id="resume" name="file">
                   </div>
                   <div class="form-group">
                     <button type="button" class="btn btn-default btn-lg candidate">
@@ -185,7 +185,7 @@ We are dedicated to providing the highest quality candidates with every company 
                 <p>
       Looking for the perfect candidate? Submit your position and we'll respond as soon as possible.
                 </p>
-                <form role="form" action="{{ url_for('employer') }}" >
+                <form role="form" id="employer_form" action="{{ url_for('employer') }}" >
                   <div class="form-group">
                     <label class="sr-only" for="company">Company</label>
                     <input type="company" class="form-control" id="company" name="company" placeholder="Enter company name">
@@ -203,8 +203,8 @@ We are dedicated to providing the highest quality candidates with every company 
                     <input type="email" class="form-control" id="phone" name="phone" placeholder="Enter phone #">
                   </div>
                   <div class="form-group">
-                    <label class="sr-only" for="details">Position Details</label>
-                    <textarea class="form-control" rows="3" id="details" placeholder="Enter position details"></textarea>
+                    <label class="sr-only" for="position">Position Details</label>
+                    <input type=file id="position" name="file">
                   </div>
                   <div class="form-group">
                     <button type="button" class="btn btn-default btn-lg employer">
@@ -217,7 +217,7 @@ We are dedicated to providing the highest quality candidates with every company 
                 <p>
       Looking for the perfect position? Submit your resume and we'll respond as soon as possible.
                 </p>
-                <form role="form" action="{{ url_for('other') }}" >
+                <form role="form" id="other_form" action="{{ url_for('other') }}" >
                   <div class="form-group">
                     <label class="sr-only" for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter full name">
