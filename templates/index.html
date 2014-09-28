@@ -185,7 +185,7 @@ We are dedicated to providing the highest quality candidates with every company 
                 <p>
       Looking for the perfect candidate? Submit your position and we'll respond as soon as possible.
                 </p>
-                <form role="form" id="employer_form" action="{{ url_for('employer') }}" >
+                <form role="form" id="employer_form" method="post" enctype="multipart/form-data" action="{{ url_for('employer') }}" >
                   <div class="form-group">
                     <label class="sr-only" for="company">Company</label>
                     <input type="company" class="form-control" id="company" name="company" placeholder="Enter company name">
@@ -217,7 +217,7 @@ We are dedicated to providing the highest quality candidates with every company 
                 <p>
       Looking for the perfect position? Submit your resume and we'll respond as soon as possible.
                 </p>
-                <form role="form" id="other_form" action="{{ url_for('other') }}" >
+                <form role="form" id="other_form" method="post" action="{{ url_for('other') }}" >
                   <div class="form-group">
                     <label class="sr-only" for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter full name">
